@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="text/javascript" src=" {{ url_for('static', filename='weather_script.js') }} "></script>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
+
 <body>
-    <h1>Dojo Campus Weathers</h1> 
-    <p>Bellvue temp: <span id='bellvue'>0</span> </p>
-    <p>Chicago temp: <span id='chicago'>0</span> </p>
-    <p>Boise temp: <span id='boise'>0</span> </p>
-    <p>Los Angeles temp: <span id='la'>0</span> </p>
-    <p>San Jose temp: <span id='sj'>0</span> </p>
+    <h1>Weather Channel</h1>
+    <div id=weather_images>
+        <img src="./snowy.png" alt="rain photo">
+        
+    </div>
+    <div id='locations'>
+        <p>Bellvue temp: <span id='bellvue'>0</span> </p>
+        <p>Chicago temp: <span id='chicago'>0</span> </p>
+        <p>Boise temp: <span id='boise'>0</span> </p>
+        <p>Los Angeles temp: <span id='la'>0</span> </p>
+        <p>San Jose temp: <span id='sj'>0</span> </p>
+    </div>
 </body>
+
 </html>

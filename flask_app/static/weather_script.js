@@ -9,13 +9,17 @@ async function getWeather() {
         // We then need to convert the data into JSON format.
         var weatherData = await response.json();
         var target_element = document.querySelector(`#${city_names[i][1]}`);
-        target_element.innerHTML = kelvinToFahrenheit (weatherData['main']['temp']);
+        target_element.innerHTML = kelvinToFahrenheit (weatherData['main']['temp']) + '°';
         // console.log(`${city_names[i][1]} - ${weatherData['main']['temp']}`);
     }
 }
 
 function kelvinToFahrenheit (temp) {
     return Math.trunc(((temp - 273.15) * (9/5)) + 32);
+}
+
+function weatherPic (){
+    
 }
 
 console.log(getWeather());
