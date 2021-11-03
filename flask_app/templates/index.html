@@ -12,10 +12,16 @@
 
 <body>
     <h1>Weather Channel</h1>
+    <button>Refresh</button>
+
     <div id=weather_images>
-        <img src="./snowy.png" alt="rain photo">
-        
+        <img src="./static/rainy.png" id= 'rainy' alt="rainy" onclick="picChange();">
+        <img src="./static/snowy.png" id= 'snowy' alt="snowy" onclick="picChange();">
+        <img src="./static/sunny.png" id= 'sunny' alt="sunny" onclick="picChange();">
+        <img src="./static/cloudy.png" id= 'cloudy' alt="cloudy" onclick="picChange();">
+        <img src="./static/cloudy.png" id= 'cloudy' alt="cloudy" onclick="picChange();">
     </div>
+
     <div id='locations'>
         <p>Bellvue temp: <span id='bellvue'>0</span> </p>
         <p>Chicago temp: <span id='chicago'>0</span> </p>
@@ -23,6 +29,7 @@
         <p>Los Angeles temp: <span id='la'>0</span> </p>
         <p>San Jose temp: <span id='sj'>0</span> </p>
     </div>
+
 </body>
 
 </html>

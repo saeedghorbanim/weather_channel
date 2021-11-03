@@ -18,10 +18,15 @@ function kelvinToFahrenheit (temp) {
     return Math.trunc(((temp - 273.15) * (9/5)) + 32);
 }
 
-function weatherPic (){
-    
+
+function picChange(getWeather()) {
+    var image = document.getElementById('sunny');
+    if (getWeather() < 70){
+        image.src = "./static/cloudy.png";
+    }
 }
 
 console.log(getWeather());
+picChange();
 
 

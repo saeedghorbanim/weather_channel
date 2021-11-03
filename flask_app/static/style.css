@@ -4,9 +4,42 @@
     box-sizing: border-box;
 }
 
+h1 {
+    margin: 0 585px;
+}
+
+button {
+    height:35px;
+    width: 100px;
+    margin: 50px 0 0 650px;
+}
+
 #locations {
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-    height: 400px;
+    height: 200px;
 }
+
+#weather_images {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 100px;
+    margin-right: 50px;
+}
+
+#rainy{
+    /* height: 200px; */
+
+}
+
+#snowy{
+    /* height: 200px; */
+}
+
+#sunny{
+    /* height: 200px; */
+
+}
+
