@@ -4,7 +4,7 @@ async function getWeather() {
 
     for (var i = 0; i < city_names.length; i++) {
         // The await keyword lets js know that it needs to wait until it gets a response back to continue.
-        var response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city_names[i][0]}&appid=66ef0d295aed661af1551de3e92185dd`);
+        var response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city_names[i][0]}&appid=);
 
         // We then need to convert the data into JSON format.
         var weatherData = await response.json();
